@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Tracker</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/graph.svg"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <img src="./assets/icons/graph.svg" alt="imagem de um grafico" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Conversor</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="title">
+          <h1>Currency</h1>
+          <h1>Tracker</h1>
+        </div>
+        <p>Cotacão do dólar e outras moedas internacionais.</p>
+      </header>
+      <div class="update">
+        <svg
+          class="notification"
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.0168933">
+            <path
+              d="M12.5 0C19.3988 0 25 5.60125 25 12.5C25 19.3988 19.3988 25 12.5 25C5.60125 25 0 19.3988 0 12.5C0 5.60125 5.60125 0 12.5 0Z"
+              fill="#00BC4F" />
+          </g>
+          <g opacity="0.353972">
+            <path
+              d="M12.5 4.24185C17.0577 4.24185 20.7582 7.94235 20.7582 12.5C20.7582 17.0577 17.0577 20.7582 12.5 20.7582C7.94232 20.7582 4.24182 17.0577 4.24182 12.5C4.24182 7.94235 7.94232 4.24185 12.5 4.24185Z"
+              fill="#00BC4F" />
+          </g>
+          <g opacity="0.691051">
+            <path
+              d="M12.4999 8.48361C14.7165 8.48361 16.5163 10.2833 16.5163 12.5C16.5163 14.7166 14.7165 16.5164 12.4999 16.5164C10.2833 16.5164 8.48352 14.7166 8.48352 12.5C8.48352 10.2833 10.2833 8.48361 12.4999 8.48361Z"
+              fill="#00BC4F" />
+          </g>
+        </svg>
+        <p>Última atualização às 23:59h</p>
+      </div>
+      <section class="stocks">
+        <div class="wrap">
+          <h2>Ações</h2>
+          <div class="stock">
+            <img
+              src="./assets/icons/Bovespa Icon.svg"
+              alt="Imagem de logo bovespa" />
+            <div class="info">
+              <h3>Índice Bovespa</h3>
+              <span>0.15%</span>
+            </div>
+          </div>
+
+          <div class="stock">
+            <img src="./assets/icons/IFIX.svg" alt="Imagem do logo IFIX" />
+            <div class="info">
+              <h3>IFIX</h3>
+              <span>0.15%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quotations">
+        <div class="wrap">
+          <h2>Cotações</h2>
+          <div class="quotation">
+            <img src="./assets/icons/Dollar Icon.svg" alt="Icone do Dollar" />
+            <div class="info">
+              <h3>Dólar comercial</h3>
+              <span>R$ 5,13</span>
+            </div>
+          </div>
+
+          <div class="quotation">
+            <img
+              src="./assets/icons/Canadian Dollar Icon.svg"
+              alt="icone do dollar canadence" />
+            <div class="info">
+              <h3>Dólar canadense</h3>
+              <span>R$ 3,78</span>
+            </div>
+          </div>
+
+          <div class="quotation">
+            <img
+              src="./assets/icons/Australian Dollar Icon.svg"
+              alt="Icone do Dollar Australiano" />
+            <div class="info">
+              <h3>Dólar Australiano</h3>
+              <span>R$ 3,48</span>
+            </div>
+          </div>
+
+          <div class="quotation">
+            <img src="./assets/icons/Euro Icon.svg" alt="Icone do Euro" />
+            <div class="info">
+              <h3>Euro</h3>
+              <span>R$ 5,43</span>
+            </div>
+          </div>
+
+          <div class="quotation">
+            <img src="./assets/icons/Libra Icon.svg" alt="Icone da Libra" />
+            <div class="info">
+              <h3>Libra</h3>
+              <span>R$ 6,16</span>
+            </div>
+          </div>
+
+          <div class="quotation">
+            <img
+              src="./assets/icons/Peso Argentino Icon.svg"
+              alt="icone do peso Argentino" />
+            <div class="info">
+              <h3>Peso Argentino</h3>
+              <span>R$ 0,02</span>
+            </div>
+          </div>
+
+          <div class="quotation">
+            <img src="./assets/icons/Yen Icon.svg" alt="Icone do Yen" />
+            <div class="info">
+              <h3>Yen</h3>
+              <span>R$ 0,02</span>
+            </div>
+          </div>
+
+          <div class="quotation">
+            <img src="./assets/icons/Won Icon.svg" alt="Icone do Yuan" />
+            <div class="info">
+              <h3>Yuan</h3>
+              <span>R$ 0,47</span>
+            </div>
+          </div>
+
+          <div class="quotation">
+            <img src="./assets/icons/Bitcoin Icon.svg" alt="icone do bitcoin" />
+            <div class="info">
+              <h3>Bitcoin</h3>
+              <span>R$ 122.148,71</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>Developer</footer>
+    </div>
+  </body>
+</html>
