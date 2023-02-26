@@ -60,6 +60,7 @@ li {
   color: #f1f1f1;
   font-size: 1rem;
   line-height: 1.2rem;
+  text-transform: uppercase;
 }
 
 header {
@@ -70,6 +71,10 @@ header {
     rgba(36, 121, 64, 0.5) 80%
   );
   padding-block: 1.5rem;
+}
+
+header img {
+  display: none;
 }
 
 .title {
@@ -125,6 +130,10 @@ section {
   margin-bottom: 3rem;
 }
 
+section h2 {
+  margin-inline: 2.8rem;
+}
+
 .wrap {
   padding-inline: 2.8rem;
 }
@@ -150,6 +159,80 @@ section {
 .stock + .stock,
 .quotation + .quotation {
   margin-top: 1rem;
+}
+
+footer {
+  color: var(--paragraph-color);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+footer a:hover {
+  color: var(--notification);
+}
+
+/* Responsivibility */
+@media (min-width: 900px) {
+  ul {
+    gap: 11rem;
+  }
+
+  li:not(:hover) {
+    opacity: 0.8;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header img {
+    display: block;
+    margin-left: 9rem;
+    width: 25rem;
+  }
+
+  .title h1 {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0;
+  }
+
+  .header p {
+    text-align: end;
+    width: min(40%, 17.5rem);
+    margin-left: 60%;
+  }
+
+  section {
+    max-width: 90rem;
+    margin-inline: auto;
+  }
+
+  .sub-wrap {
+    width: 44%;
+  }
+
+  section .wrap {
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+  }
+
+  :where(.quotation, .stock) {
+    width: min(40%, 100%);
+  }
+
+  .stock + .stock,
+  .quotation + .quotation {
+    margin-top: 0;
+  }
 }
 
 /* Animações */
