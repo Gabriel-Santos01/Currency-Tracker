@@ -43,7 +43,7 @@ nav {
   padding-block: 2rem;
 }
 
-nav img {
+nav svg {
   position: absolute;
   left: 2rem;
   top: 0.8rem;
@@ -251,7 +251,66 @@ footer a:hover {
   }
 }
 
-/* scroll bar */
+/* nav svg animation */
+
+@-webkit-keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 491.89678955078125px;
+    stroke-dasharray: 491.89678955078125px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 491.89678955078125px;
+  }
+}
+
+@keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 491.89678955078125px;
+    stroke-dasharray: 491.89678955078125px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 491.89678955078125px;
+  }
+}
+
+.svg-elem-1 {
+  -webkit-animation: animate-svg-stroke-1 1s ease-in-out 0s both;
+  animation: animate-svg-stroke-1 1s ease-in-out 0s both;
+}
+
+@-webkit-keyframes animate-svg-stroke-2 {
+  0% {
+    stroke-dashoffset: 281.0848388671875px;
+    stroke-dasharray: 281.0848388671875px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 281.0848388671875px;
+  }
+}
+
+@keyframes animate-svg-stroke-2 {
+  0% {
+    stroke-dashoffset: 281.0848388671875px;
+    stroke-dasharray: 281.0848388671875px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 281.0848388671875px;
+  }
+}
+
+.svg-elem-2 {
+  -webkit-animation: animate-svg-stroke-2 1s ease-in-out 0.12s both;
+  animation: animate-svg-stroke-2 1s ease-in-out 0.12s both;
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
