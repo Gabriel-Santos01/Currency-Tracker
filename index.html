@@ -108,113 +108,146 @@
               fill="#00BC4F" />
           </g>
         </svg>
-        <p>Última atualização às 23:59h</p>
+        <p id="date-hour"></p>
       </div>
+
       <section class="stocks">
         <div class="sub-wrap">
           <h2>Ações</h2>
         </div>
         <div class="wrap">
-          <div class="stock">
+          <div class="stock" data-id="IBOVESPA">
             <img
               src="./assets/icons/Bovespa Icon.svg"
               alt="Imagem de logo bovespa" />
-            <div class="info">
-              <h3>Índice Bovespa</h3>
-              <span>0.15%</span>
+            <div>
+              <h3 data-id="IBOVESPA">Índice Bovespa</h3>
+              <span class="stockValue" data-id="IBOVESPA">-</span>
             </div>
           </div>
 
-          <div class="stock">
+          <div class="stock" data-id="IFIX">
             <img src="./assets/icons/IFIX.svg" alt="Imagem do logo IFIX" />
-            <div class="info">
+            <div>
               <h3>IFIX</h3>
-              <span>0.15%</span>
+              <span class="stockValue" data-id="IFIX">-</span>
+            </div>
+          </div>
+
+          <div class="stock" data-id="CAC">
+            <img src="./assets/icons/IFIX.svg" alt="Imagem do logo IFIX" />
+            <div>
+              <h3>IFIX</h3>
+              <span class="stockValue" data-id="CAC">-</span>
+            </div>
+          </div>
+
+          <div class="stock" data-id="DOWJONES">
+            <img src="./assets/icons/IFIX.svg" alt="Imagem do logo IFIX" />
+            <div>
+              <h3>IFIX</h3>
+              <span class="stockValue" data-id="DOWJONES">-</span>
+            </div>
+          </div>
+
+          <div class="stock" data-id="NASDAQ">
+            <img src="./assets/icons/IFIX.svg" alt="Imagem do logo IFIX" />
+            <div>
+              <h3>IFIX</h3>
+              <span class="stockValue" data-id="NASDAQ">-</span>
+            </div>
+          </div>
+
+          <div class="stock" data-id="NIKKEI">
+            <img src="./assets/icons/IFIX.svg" alt="Imagem do logo IFIX" />
+            <div>
+              <h3>IFIX</h3>
+              <span class="stockValue" data-id="NIKKEI">-</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="quotations">
+      <section class="currencies">
         <div class="sub-wrap">
           <h2>Cotações</h2>
         </div>
         <div class="wrap">
-          <div class="quotation">
+          <div class="currency" data-id="USD">
             <img src="./assets/icons/Dollar Icon.svg" alt="Icone do Dollar" />
-            <div class="info">
-              <h3>Dólar comercial</h3>
-              <span>R$ 5,13</span>
+            <div>
+              <h3 class="quotes">Dólar comercial</h3>
+              <span class="currencyValue" data-id="USD">R$ -</span>
             </div>
           </div>
 
-          <div class="quotation">
+          <div class="currency" data-id="CAD">
             <img
               src="./assets/icons/Canadian Dollar Icon.svg"
               alt="icone do dollar canadence" />
-            <div class="info">
-              <h3>Dólar canadense</h3>
-              <span>R$ 3,78</span>
+            <div>
+              <h3 class="quotes">Dólar canadense</h3>
+              <span class="currencyValue" data-id="CAD">R$ -</span>
             </div>
           </div>
 
-          <div class="quotation">
+          <div class="currency" data-id="AUD">
             <img
               src="./assets/icons/Australian Dollar Icon.svg"
               alt="Icone do Dollar Australiano" />
-            <div class="info">
-              <h3>Dólar Australiano</h3>
-              <span>R$ 3,48</span>
+            <div>
+              <h3 class="quotes">Dólar Australiano</h3>
+              <span class="currencyValue" data-id="AUD">R$ -</span>
             </div>
           </div>
 
-          <div class="quotation">
+          <div class="currency" data-id="EUR">
             <img src="./assets/icons/Euro Icon.svg" alt="Icone do Euro" />
-            <div class="info">
-              <h3>Euro</h3>
-              <span>R$ 5,43</span>
+            <div>
+              <h3 class="quotes">Euro</h3>
+              <span class="currencyValue" data-id="EUR">R$ -</span>
             </div>
           </div>
 
-          <div class="quotation">
+          <div class="currency" data-id="GBP">
             <img src="./assets/icons/Libra Icon.svg" alt="Icone da Libra" />
-            <div class="info">
-              <h3>Libra</h3>
-              <span>R$ 6,16</span>
+            <div>
+              <h3 class="quotes">Libra</h3>
+              <span class="currencyValue" data-id="GBP">R$ -</span>
             </div>
           </div>
 
-          <div class="quotation">
+          <div class="currency" data-id="ARS">
             <img
               src="./assets/icons/Peso Argentino Icon.svg"
               alt="icone do peso Argentino" />
-            <div class="info">
-              <h3>Peso Argentino</h3>
-              <span>R$ 0,02</span>
+            <div>
+              <h3 class="quotes">Peso Argentino</h3>
+              <span class="currencyValue" data-id="ARS">R$ -</span>
             </div>
           </div>
 
-          <div class="quotation">
+          <div class="currency" data-id="JPY">
             <img src="./assets/icons/Yen Icon.svg" alt="Icone do Yen" />
-            <div class="info">
-              <h3>Yen</h3>
-              <span>R$ 0,02</span>
+            <div>
+              <h3 class="quotes">Yen</h3>
+              <span class="currencyValue" data-id="JPY">R$ -</span>
             </div>
           </div>
 
-          <div class="quotation">
+          <div class="currency" data-id="CNY">
             <img src="./assets/icons/Won Icon.svg" alt="Icone do Yuan" />
-            <div class="info">
-              <h3>Yuan</h3>
-              <span>R$ 0,47</span>
+            <div>
+              <h3 class="quotes">Yuan</h3>
+              <span class="currencyValue" data-id="CNY">R$ -</span>
             </div>
           </div>
 
-          <div class="quotation">
+          <div class="currency" data-id="BTC">
             <img src="./assets/icons/Bitcoin Icon.svg" alt="icone do bitcoin" />
-            <div class="info">
-              <h3>Bitcoin</h3>
-              <span>R$ 122.148,71</span>
+            <div>
+              <h3 class="quotes">Bitcoin</h3>
+              <span class="currencyValue" data-id="BTC">R$ -</span>
             </div>
           </div>
         </div>

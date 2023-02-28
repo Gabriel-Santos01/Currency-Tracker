@@ -138,12 +138,12 @@ section h2 {
   padding-inline: 2.8rem;
 }
 
-:where(.quotation, .stock) img {
+:where(.currency, .stock) img {
   width: 3.1rem;
 }
 
 .stock,
-.quotation {
+.currency {
   display: flex;
   gap: 1.1rem;
   color: var(--text-color);
@@ -157,7 +157,7 @@ section h2 {
 }
 
 .stock + .stock,
-.quotation + .quotation {
+.currency + .currency {
   margin-top: 1rem;
 }
 
@@ -225,12 +225,12 @@ footer a:hover {
     flex-wrap: wrap;
   }
 
-  :where(.quotation, .stock) {
+  :where(.currency, .stock) {
     width: min(40%, 100%);
   }
 
   .stock + .stock,
-  .quotation + .quotation {
+  .currency + .currency {
     margin-top: 0;
   }
 }
